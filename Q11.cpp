@@ -1,0 +1,20 @@
+#include<iostream>
+#include <math.h>
+
+using namespace std;
+int main() {
+	//swap without 3rd variable & +/-
+	int a, b;
+	cout << "Enter value of a =  ";
+	cin >> a;
+	cout << "Enter value of b =  ";
+	cin >> b;
+
+	a = a ^ b;			//or use swap(a,b)
+	b = a ^ b;
+	a = a ^ b;
+
+	cout << "\nAfter Swapping \na = " << a << "\nb= " << b;
+
+	return 0;
+}
