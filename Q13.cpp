@@ -16,8 +16,8 @@ int main() {
     Compound_Interest = Principal * (pow((1 + Rate / 100), Time));
     Interest = Compound_Interest - Principal;
 
-    cout << "The Interest after compounded for the amount "<< Principal <<" for "<< Time << "years  @" << Rate <<" % is: " << Interest << endl;
-    cout << "The Interest after compounded for the amount " << Principal << " for " << Time << "years  @" << Rate << " % is: " << Compound_Interest<< endl;
+    cout << "The Interest after compounded for the amount " << Principal << " for " << Time << " years  @" << Rate << " % is: " << Interest << endl;
+    cout << "The Interest after compounded for the amount " << Principal << " for " << Time << " years  @" << Rate << " % is: " << Compound_Interest << endl;
 
     return 0;
 }
