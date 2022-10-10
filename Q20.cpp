@@ -18,7 +18,7 @@ int main()
 	DryFruit_cal = Nut_Cal / 0.7;
 	Nutsfruits_needed = TotalCal / (DryFruit_cal + Nut_Cal);
 
-	cout << "Total Pounds of nuts and dry fruits needed: " << Nutsfruits_needed;
+	cout << "Total Pounds of nuts and dry fruits needed: " << Nutsfruits_needed << " lbs";
 
 	return 0;
 }
