@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 	//no of bags to store rice
-	int rice,bags;
+	float rice, bags;
 
 	cout << "Enter amount of rice to be stored in a bag.\t";
 	cin >> rice;
