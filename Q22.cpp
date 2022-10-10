@@ -13,14 +13,14 @@ int main() {
 	number1 = rand() % 100000 + 1;
 	number2 = rand() % 100000 + 1;
 
-	cout << "Welcome To The Tution\n";
+	cout << "Welcome To The Tution\n\n";
 	cout << setw(10) << number1 << "\n+" << setw(9) << number2 << "\n----------" << endl;
 	cout << "Press any key for the answer\n\n" << endl;
 
 	_getch();
 
 	cout << setw(10) << number1 << "\n+" << setw(9) << number2 << "\n----------" << endl;
-	cout << setw(10) << number1 + number2;
+	cout << setw(10) << number1 + number2 << endl;
 
 	return 0;
 }
