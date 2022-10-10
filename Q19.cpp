@@ -6,7 +6,9 @@
 using namespace std;
 int main() {
 	//Paint
-	float door_len, door_wid, win1_len, win1_wid, win2_len, win2_wid, shel_len, shel_wid, room_len, room_wid, room_hei, door_area, win_area, shel_area, room_area, wall_area, total_paint;
+	float PaintPerGallon, door_len, door_wid, win1_len, win1_wid, win2_len, win2_wid, shel_len, shel_wid, room_len, room_wid, room_hei, door_area, win_area, shel_area, room_area, wall_area, total_paint;
+	cout << "Enter the area that can be painted with 1 gallon of paint: ";
+	cin >> PaintPerGallon;
 	cout << "Enter the length and width of door in feet\n";
 	cin >> door_len >> door_wid;
 	cout << "Enter the length and width of 1st window in feet\n";
@@ -25,10 +27,11 @@ int main() {
 	wall_area = room_area - (door_area + win_area + shel_area);
 
 	total_paint = (1.0 / 120) * wall_area;
+	float PaintNeeded = total_paint / PaintPerGallon;
 
-	cout << "The area that can be painted with 1 Gallon of paint are " << int(wall_area) << " square feet\n";
+	cout << "The area that can be painted with 1 Gallon of paint are " << wall_area << " square feet\n";
 
-	cout << "The total paint required to paint all the walls of a room are " << int(total_paint) << " Gallons";
+	cout << "The total paint required to paint all the walls of a room are " << PaintNeeded << " Gallons";
 
 
 	return 0;
