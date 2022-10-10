@@ -26,7 +26,7 @@ int main() {
 
 	total_paint = (1.0 / 120) * wall_area;
 
-	cout << "The total paint required to paint all the walls of a room are "<< int(total_paint) << " Gallons";
+	cout << "The total paint required to paint all the walls of a room are "<< total_paint << " Gallons";
 
 
 
